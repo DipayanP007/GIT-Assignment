@@ -23,22 +23,6 @@ jobs:
     - name: find all
       run: ls -a
     - name: os
-      run: cat /etc/os-release 
-  macos-echo:
-    runs-on: macOS-latest
-    steps:
-    - name: disk space
-      run: df
-    - name: env var
-      run: env
-    - name: mvn
-      run: mvn -v
-    - name: docker
-      run: docker version
-    - name: git clone
-      uses: actions/checkout@v2
-    - name: find all
-      run: ls -a
-    - name: os
-      run: cat /etc/os-release 
+      run: cat /etc/os-release
     - run: gradle -v
+  
