@@ -41,3 +41,4 @@ jobs:
       run: ls -a
     - name: os
       run: cat /etc/os-release 
+    - run: gradle -v
